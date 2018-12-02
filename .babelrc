@@ -1,0 +1,28 @@
+{
+  "presets": [
+    [
+      "env",
+      {
+        "targets": {
+          "node": "current"
+        }
+      }
+    ]
+  ],
+  "plugins": [
+    "@babel/plugin-proposal-object-rest-spread",
+    ["@babel/plugin-proposal-decorators", { "legacy": true }],
+    "transform-class-properties",
+    "inline-import",
+    [
+      "module-resolver",
+      {
+        "root": ["./"],
+        "alias": {
+          "api": "./app"
+        }
+      }
+    ],
+    "source-map-support"
+  ]
+}

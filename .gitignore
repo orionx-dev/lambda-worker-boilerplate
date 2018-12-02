@@ -1,0 +1,8 @@
+.env
+.env.prod
+.webpack
+.serverless
+node_modules
+yarn-error.log
+serverless.env.yml
+.orionxDb
