@@ -17,7 +17,9 @@ plugins:
 custom:
   serverless-offline:
     port: 4000
-  webpackIncludeModules: true
+  webpack:
+    webpackConfig: 'webpack.config.js'
+    includeModules: true
 
 functions:
   cron:

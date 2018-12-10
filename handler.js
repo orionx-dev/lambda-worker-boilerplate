@@ -1,5 +1,3 @@
-exports.run = (event, context) => {
-  // It's glorious
-  const time = new Date()
-  console.log(`Your cron function "${context.functionName}" ran at ${time}`)
+export const run = async (event, context, callback) => {
+  console.log('loggin')
 }
